@@ -1,0 +1,12 @@
+version: 11.4.2
+services:
+mysql:
+image: mariadb:latest
+ports:
+  - "3306:3306"
+container_name: mariadbcompose
+restart: unless-stopped
+environment:
+  MARIADB_ROOT_PASSWORD: vivek7903
+
+
